@@ -1,0 +1,4 @@
+/venv/
+/QuizDB.db
+/questions.json
+/quiz.py
