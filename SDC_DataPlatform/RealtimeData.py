@@ -33,4 +33,4 @@ def show():
         for i in range(len(data)):
             foos[i].metric(data[i][1], data[i][2])
 
-        time.sleep(5)
+        time.sleep(3)
