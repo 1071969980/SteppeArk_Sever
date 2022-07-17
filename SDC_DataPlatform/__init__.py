@@ -2,6 +2,7 @@ import streamlit as st
 import sqlite3
 import os
 import json
+import zmq
 
 
 def InitState(key: str, value):
@@ -18,8 +19,38 @@ Pages = ("Realtime Data", "Data Charts", "Control panel")
 AdminKey = "982c7116-cef4-4d1c-b51e-8eda2c275741"
 
 
+@st.experimental_singleton
+def ComSocket():
+    context = zmq.Context()
+
+    ventilator_send = context.socket(zmq.PUSH)
+    ventilator_send.bind("tcp://127.0.0.1:5557")
+
+    return ventilator_send
+
+
+@st.experimental_singleton
+def ComPoller():
+    poller = zmq.Poller()
+    poller.register(ComSocket(), zmq.POLLIN)
+
+    return poller
+
+
+def GetRuntimeGlobalParams():
+    db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
+    runtime_db = sqlite3.connect(db_path)
+    runtime_cursor = runtime_db.cursor()
+
+    runtime_cursor.execute("select * from GlobalParam")
+
+    data = runtime_cursor.fetchall()
+    runtime_db.close()
+    return data
+
+
 def GetRuntimeData():
-    db_path = os.path.abspath(os.path.join(os.getcwd(), "..", "ModbusCOM/Runtime.db"))
+    db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
     runtime_db = sqlite3.connect(db_path)
     runtime_cursor = runtime_db.cursor()
 
@@ -33,7 +64,7 @@ def GetRuntimeData():
 
 
 def GetData(time, name):
-    db_path = os.path.abspath(os.path.join(os.getcwd(), "..", f"ModbusCOM/database/{time}.db"))
+    db_path = os.path.abspath(os.path.join(os.getcwd(), f"database/{time}.db"))
     if os.path.exists(db_path):
         db = sqlite3.connect(db_path)
         cursor = db.cursor()
@@ -56,31 +87,28 @@ class Command:
 
 
 class ParamCommand(Command):
-    globalParamName = ""
+    paramName = ""
     value = 0
 
     def __init__(self, name: str, value: float, describe: str = "No Describe"):
         self.describe = describe
         self.type = "Param"
-        self.globalParamName = name
+        self.paramName = name
         self.value = value
 
     def ToJson(self):
-        dict = {"describe": self.describe,
-                "type": self.type,
-                "name": self.globalParamName,
-                "value": self.value}
-        return json.dumps(dict)
+        return json.dumps(self.__dict__)
 
     @classmethod
     def FromJson(cls, jsonstr):
         d = json.loads(jsonstr)
-        return cls(d["name"], d["value"], d["describe"])
+        return cls(d["paramName"], d["value"], d["describe"])
+
 
 class ModbusCommand(Command):
 
-    def __init__(self,port,baudrate,bytesize,parity,stopbits,
-                 slaveID,functionCode,address,outputValue,describe: str = "No Describe"):
+    def __init__(self, port, baudrate, bytesize, parity, stopbits,
+                 slaveID, functionCode, address, outputValue, describe: str = "No Describe"):
         self.describe = describe
         self.type = "Modbus"
         self.port = port
@@ -94,7 +122,7 @@ class ModbusCommand(Command):
         self.outputValue = outputValue
 
     @classmethod
-    def FromJson(cls,jsonstr):
+    def FromJson(cls, jsonstr):
         d = json.loads(jsonstr)
         return cls(
             d["port"],

@@ -1,14 +1,9 @@
 import random
 import streamlit as st
-import os
-import sqlite3
 import SDC_DataPlatform as SDC
 import altair as alt
-import numpy as np
 import datetime
 import pandas as pd
-import pytz
-import time
 
 
 def GetDateList(start_date, end_date):
