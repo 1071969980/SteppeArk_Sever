@@ -121,8 +121,10 @@ def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: 
         except Exception as e:
             RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, "Failed")
             ErrorLog(f"Execute command Fail in {str(datetime.now())}. Error is {e.__str__()}")
+        finally:
             if 'master' in dir():
                 master.close()
+            db.commit()
 
 
 
