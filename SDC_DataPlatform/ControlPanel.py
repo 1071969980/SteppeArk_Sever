@@ -91,6 +91,7 @@ def show():
                 with colsB[-1]:
                     sb = st.form_submit_button("Send Command",
                                                "Command will be executed later, due to ModbusCOM's read_interval config")
+                with colsB[1]:
                     if sb:
                         SendModbusCommand(port, baudrate, bytesize, parity, stopbits,
                                           slaveID, functionCode, address, outputValue, describe)

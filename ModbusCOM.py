@@ -102,10 +102,13 @@ def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: 
             ErrorLog(f"Execute command Fail in {str(datetime.now())}, error is {e.__str__()}")
     elif d["type"] == "Modbus":
         c = SDC.ModbusCommand.FromJson(command)
-        # TODO 实现根据网站命令执行发送Modbus指令
         try:
+            if c.port == 0:
+                port = cf.get("Port Define", "port01")
+            else:
+                port = cf.get("Port Define", "port02")
             master = modbus_rtu.RtuMaster(serial.Serial(
-                port=c.port,baudrate=c.baudrate,bytesize=c.bytesize,parity=c.parity,stopbits=c.stopbits
+                port=port,baudrate=c.baudrate,bytesize=c.bytesize,parity=c.parity,stopbits=c.stopbits
             ))
             master.set_timeout(1.0)
             #写操作
