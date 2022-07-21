@@ -28,7 +28,7 @@ def show():
     else:
         CommandType = st.selectbox("Command Type", ["Global Param Command", "Modbus Command"])
 
-        with st.form("CommandForm",True):
+        with st.form("CommandForm", True):
             if CommandType == "Global Param Command":
 
                 colsM = st.columns([1, 7, 1], gap="large")
@@ -89,15 +89,15 @@ def show():
 
                 colsB = st.columns([1, 5, 2], gap="large")
                 with colsB[-1]:
-                    submitButton = st.form_submit_button("Send Command",
-                                                         "Command will be executed later, due to ModbusCOM's read_interval config",
-                                                         SendModbusCommand,
-                                                         (port, baudrate, bytesize, parity, stopbits,
-                                                          slaveID, functionCode, address, outputValue, describe))
+                    sb = st.form_submit_button("Send Command",
+                                               "Command will be executed later, due to ModbusCOM's read_interval config")
+                    if sb:
+                        SendModbusCommand(port, baudrate, bytesize, parity, stopbits,
+                                          slaveID, functionCode, address, outputValue, describe)
+                        st.info(f"""Command will be executed later, due to ModbusCOM's read_interval config""")
 
         st.write("## Command History")
         commandH = SDC.QueryCommandHistory()
         st.dataframe(commandH, height=300)
 
         st.write("## Data Download")
-
