@@ -213,7 +213,7 @@ def show():
             fromDate = st.date_input("From", key=f"Chart{i + 1}FromDate")
             todate = st.date_input("To", key=f"Chart{i + 1}ToDate")
 
-            runtimeData = SDC.GetRuntimeData()
+            runtimeData = SDC.QueryRuntimeData()
             labels = ExtractLabel(runtimeData, 1)
             elements = st.multiselect(f"Chart {i + 1} elements", labels, key=f"Chart{i + 1}Elements")
 
@@ -223,7 +223,7 @@ def show():
                 data = []
                 for date in dates:
                     for ele in elements:
-                        ex = SDC.GetData(date, ele)
+                        ex = SDC.QueryData(date, ele)
                         for j in range(len(ex)):
                             ex[j] = list(ex[j])
                             ex[j][1] = date + " " + ex[j][1]
@@ -256,3 +256,9 @@ def show():
                         st.altair_chart(GetChart(df, elements, 0, width))
                     else:
                         st.altair_chart(GetChart(df, elements, 1, width))
+
+    with st.expander(f"Data Download"):
+        fromDownloadDate = st.date_input("From")
+        toDownloadDate = st.date_input("To")
+
+

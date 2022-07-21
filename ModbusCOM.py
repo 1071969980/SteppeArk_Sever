@@ -1,6 +1,7 @@
 import json
 import logging
 import time
+from datetime import datetime
 import sys
 import os
 import sqlite3
@@ -10,7 +11,7 @@ import serial
 import modbus_tk
 from modbus_tk import modbus_rtu
 import zmq
-import SDC_DataPlatform
+import SDC_DataPlatform as SDC
 
 
 class Runtime(Enum):
@@ -21,17 +22,17 @@ class Runtime(Enum):
 
 def DebugLog(mesg):
     print(f"DEBUG: {mesg}")
-    logging.debug(mesg)
+    logger.debug(mesg)
 
 
 def ErrorLog(mesg):
     print(f"ERROR: {mesg}")
-    logging.error(mesg)
+    logger.error(mesg)
 
 
 def CriticalToExit(mesg):
     print(f"CRITICAL: {mesg}")
-    logging.critical(mesg)
+    logger.critical(mesg)
     input("press entry to exit")
     sys.exit(0)
 
@@ -68,38 +69,70 @@ def UpdateDataToRuntimeSQL(cursor: sqlite3.Cursor, table, name, data):
             ErrorLog(f"could not find {name} in InputParam table")
         return
     if table == Runtime.Output:
-        if cursor.execute("select * from OutputParam where name = ?", name).fetchall():
-            cursor.execute("UPDATE InputParam SET data = ? WHERE name = ?", (data, name))
+        if cursor.execute("select * from OutputParam where name = ?", (name,)).fetchall():
+            cursor.execute("UPDATE OutputParam SET data = ? WHERE name = ?", (data, name))
         else:
             ErrorLog(f"could not find {name} in OutputParam table")
         return
     if table == Runtime.Global:
-        if cursor.execute("select * from GlobalParam where name = ?", name).fetchall():
-            cursor.execute("UPDATE InputParam SET data = ? WHERE name = ?", (data, name))
+        if cursor.execute("select * from GlobalParam where name = ?",  (name,)).fetchall():
+            cursor.execute("UPDATE GlobalParam SET data = ? WHERE name = ?", (data, name))
         else:
             ErrorLog(f"could not find {name} in GlobalParam table")
         return
 
 
-def ExecuteSeverCommand(command: str):
+def RecordCommandHistory(cursor: sqlite3.Cursor, time, command, result):
+    cursor.execute("INSERT INTO CommandHistory VALUES (null,?,?,?)", (time, command, result))
+
+
+
+def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: str):
     d = json.loads(command)
-    # if d["type"] == "Parma":
-    #
-    # elif d["type"] == "Modbus":
-
-
+    if d["type"] == "Param":
+        c = SDC.ParamCommand.FromJson(command)
+        try:
+            UpdateDataToRuntimeSQL(cursor,Runtime.Global,c.paramName,c.value)
+            RecordCommandHistory(cursor,str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')),command,"Success")
+            db.commit()
+            DebugLog(f"Execute command successfully in {str(datetime.now())}")
+        except Exception as e:
+            RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, "Failed")
+            db.commit()
+            ErrorLog(f"Execute command Fail in {str(datetime.now())}, error is {e.__str__()}")
+    elif d["type"] == "Modbus":
+        c = SDC.ModbusCommand.FromJson(command)
+        # TODO 实现根据网站命令执行发送Modbus指令
+        try:
+            master = modbus_rtu.RtuMaster(serial.Serial(
+                port=c.port,baudrate=c.baudrate,bytesize=c.bytesize,parity=c.parity,stopbits=c.stopbits
+            ))
+            master.set_timeout(1.0)
+            #写操作
+            if [5,6].count(c.functionCode) != 0:
+                res = master.execute(c.slaveID, c.functionCode,c.address,1,c.outputValue)
+            else:
+                res = master.execute(c.slaveID, c.functionCode,c.address,1)
+            DebugLog(f"Execute command successfully in {str(datetime.now())}")
+            RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, f"Success,result: {res}")
+        except Exception as e:
+            RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, "Failed")
+            ErrorLog(f"Execute command Fail in {str(datetime.now())}. Error is {e.__str__()}")
+            if 'master' in dir():
+                master.close()
 
 
 
 if __name__ == "__main__":
 
     # region ——————配置log格式——————
-    logging.basicConfig(level=logging.DEBUG,
-                        format="%(asctime)s; %(levelname)s; %(message)s",
-                        datefmt='%Y-%m-%d  %H:%M:%S',
-                        filename='rootLog.log',
-                        )
-    logging.debug("app start")
+    logger = logging.getLogger("ModbusLogger")
+    logger.setLevel(logging.DEBUG)
+    ModbusLogFileHandle = logging.FileHandler("ModbusLog.log")
+    ModbusLogFileHandle.setFormatter(logging.Formatter("%(asctime)s; %(levelname)s; %(message)s",'%Y-%m-%d  %H:%M:%S'))
+    logger.addHandler(ModbusLogFileHandle)
+
+    logger.debug("app start")
     modbus_tk.LOGGER.disabled = True
     # endregion
 
@@ -290,6 +323,7 @@ if __name__ == "__main__":
         if socks:
             if socks.get(comSocket) == zmq.POLLIN:
                 recv = comSocket.recv(zmq.NOBLOCK).decode("utf-8")
+                ExecuteSeverCommand(runtime_db,runtime_cursor,recv)
 
         # endregion
 

@@ -13,7 +13,7 @@ def show():
     """
     )
 
-    data = SDC.GetRuntimeData()
+    data = SDC.QueryRuntimeData()
     cols = st.columns(4)
     foos = []
 
@@ -28,7 +28,7 @@ def show():
         if ss.Page != SDC.Pages[0]:
             break
 
-        data = SDC.GetRuntimeData()
+        data = SDC.QueryRuntimeData()
 
         for i in range(len(data)):
             foos[i].metric(data[i][1], data[i][2])

@@ -1,0 +1,97 @@
+2022-07-20  17:18:02; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-20  17:18:02; DEBUG; InputParam init
+2022-07-20  17:18:07; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:18:18; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:18:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:18:40; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:18:51; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:19:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:19:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:32:57; DEBUG; app start
+2022-07-20  17:32:57; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-20  17:32:57; DEBUG; InputParam init
+2022-07-20  17:33:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:33:02; DEBUG; Execute command successfully in 2022-07-20 17:33:02.572477
+2022-07-20  17:33:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:33:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:33:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:33:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:33:45; DEBUG; Execute command successfully in 2022-07-20 17:33:45.637606
+2022-07-20  17:33:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:34:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:34:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:34:17; DEBUG; Execute command successfully in 2022-07-20 17:34:17.690154
+2022-07-20  17:34:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:39:27; DEBUG; app start
+2022-07-20  17:39:27; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-20  17:39:27; DEBUG; InputParam init
+2022-07-20  17:39:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:39:32; DEBUG; Execute command successfully in 2022-07-20 17:39:32.178651
+2022-07-20  17:39:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:39:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:39:53; DEBUG; Execute command successfully in 2022-07-20 17:39:53.220383
+2022-07-20  17:40:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:40:03; DEBUG; Execute command successfully in 2022-07-20 17:40:03.230549
+2022-07-20  17:40:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:40:24; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:40:35; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:40:46; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:41:12; DEBUG; app start
+2022-07-20  17:41:12; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-20  17:41:12; DEBUG; InputParam init
+2022-07-20  17:41:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:41:17; DEBUG; Execute command successfully in 2022-07-20 17:41:17.722869
+2022-07-20  17:41:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:41:38; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:41:49; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:00; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:11; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:22; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:42:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:43:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:43:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:43:28; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:43:39; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:43:50; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:01; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:44:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:45:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:45:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:45:30; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:45:41; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:45:52; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:14; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:25; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:36; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:47; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:46:58; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:47:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:47:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:47:31; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:47:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:47:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:04; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:15; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:26; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:37; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:48; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:48:59; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:49:10; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:49:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:49:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:49:43; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:49:54; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:50:02; DEBUG; app start
+2022-07-20  17:50:02; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-20  17:50:02; DEBUG; InputParam init
+2022-07-20  17:50:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:50:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)
+2022-07-20  17:50:19; DEBUG; Execute command successfully in 2022-07-20 17:50:19.018012
+2022-07-20  17:50:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, '系统找不到指定的路径。', None, 3)

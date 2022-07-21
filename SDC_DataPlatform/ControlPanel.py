@@ -15,7 +15,7 @@ def SendParamCommand(name, value, describe):
 def SendModbusCommand(port, baudrate, bytesize, parity, stopbits,
                       slaveID, functionCode, address, outputValue, describe):
     c = SDC.ModbusCommand(port, baudrate, bytesize, parity, stopbits,
-                      slaveID, functionCode, address, outputValue, describe)
+                          slaveID, functionCode, address, outputValue, describe)
     json_str = c.ToJson()
     sender = SDC.ComSocket()
     sender.send(json_str.encode("utf-8"))
@@ -28,12 +28,12 @@ def show():
     else:
         CommandType = st.selectbox("Command Type", ["Global Param Command", "Modbus Command"])
 
-        with st.form("CommandForm", True):
+        with st.form("CommandForm",True):
             if CommandType == "Global Param Command":
 
                 colsM = st.columns([1, 7, 1], gap="large")
                 with colsM[1]:
-                    datas = SDC.GetRuntimeGlobalParams()
+                    datas = SDC.QueryRuntimeGlobalParams()
                     dataNames = []
                     for data in datas:
                         dataNames.append(data[1])
@@ -47,11 +47,12 @@ def show():
 
                 colsB = st.columns([1, 5, 2], gap="large")
                 with colsB[-1]:
-                    submitButton = st.form_submit_button("Send Command",
-                                                         "Command will be executed later, due to ModbusCOM's read_interval config",
-                                                         SendParamCommand,
-                                                         (name, value, describe))
-
+                    sb = st.form_submit_button("Send Command",
+                                               "Command will be executed later, due to ModbusCOM's read_interval config")
+                with colsB[1]:
+                    if sb:
+                        SendParamCommand(name, value, describe)
+                        st.info(f"""Command will be executed later, due to ModbusCOM's read_interval config""")
 
             elif CommandType == "Modbus Command":
                 st.write("----Send modbus command to slave device")
@@ -92,6 +93,11 @@ def show():
                                                          "Command will be executed later, due to ModbusCOM's read_interval config",
                                                          SendModbusCommand,
                                                          (port, baudrate, bytesize, parity, stopbits,
-                                                         slaveID, functionCode, address, outputValue, describe))
+                                                          slaveID, functionCode, address, outputValue, describe))
 
+        st.write("## Command History")
+        commandH = SDC.QueryCommandHistory()
+        st.dataframe(commandH, height=300)
+
+        st.write("## Data Download")
 

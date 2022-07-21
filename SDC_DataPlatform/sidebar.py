@@ -22,4 +22,4 @@ def show():
 
     if not ss.admin:
         adminKey = st.sidebar.text_input(label="AdminKey", placeholder="Key to access advanced features")
-        st.sidebar.button("Login",on_click=SDC.VerfyPassword,args=(adminKey,))
+        st.sidebar.button("Login", on_click=SDC.VerifyPassword, args=(adminKey,))

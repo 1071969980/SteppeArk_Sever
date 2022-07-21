@@ -39,7 +39,9 @@
     <connection id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" dataset="main.GlobalParam" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" dataset="main.InputParam" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" dataset="main.CommandHistory" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -115,7 +117,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="true" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />

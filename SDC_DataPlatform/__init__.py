@@ -1,3 +1,4 @@
+import pandas
 import streamlit as st
 import sqlite3
 import os
@@ -37,7 +38,7 @@ def ComPoller():
     return poller
 
 
-def GetRuntimeGlobalParams():
+def QueryRuntimeGlobalParams():
     db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
     runtime_db = sqlite3.connect(db_path)
     runtime_cursor = runtime_db.cursor()
@@ -49,7 +50,7 @@ def GetRuntimeGlobalParams():
     return data
 
 
-def GetRuntimeData():
+def QueryRuntimeData():
     db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
     runtime_db = sqlite3.connect(db_path)
     runtime_cursor = runtime_db.cursor()
@@ -63,7 +64,7 @@ def GetRuntimeData():
     return data
 
 
-def GetData(time, name):
+def QueryData(time, name):
     db_path = os.path.abspath(os.path.join(os.getcwd(), f"database/{time}.db"))
     if os.path.exists(db_path):
         db = sqlite3.connect(db_path)
@@ -76,7 +77,26 @@ def GetData(time, name):
         return data
 
 
-def VerfyPassword(password: str):
+def QueryCommandHistory():
+    db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
+    runtime_db = sqlite3.connect(db_path)
+    runtime_cursor = runtime_db.cursor()
+
+    runtime_cursor.execute("select * from CommandHistory")
+
+    data = runtime_cursor.fetchall()
+
+    runtime_db.close()
+
+    dataL = []
+    for row in data:
+        dataL.append(list(row))
+    dataL.reverse()
+
+    return pandas.DataFrame(dataL,columns=["ID","Time","Command","Result"])
+
+
+def VerifyPassword(password: str):
     if password == AdminKey:
         st.session_state["admin"] = True
 
