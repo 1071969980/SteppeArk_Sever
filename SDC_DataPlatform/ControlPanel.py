@@ -1,7 +1,7 @@
 import streamlit as st
-import SDC_DataPlatform as SDC
-import zmq
 from streamlit import session_state as ss
+
+import SDC_DataPlatform as SDC
 
 
 def SendParamCommand(name, value, describe):
@@ -100,5 +100,3 @@ def show():
         st.write("## Command History")
         commandH = SDC.QueryCommandHistory()
         st.dataframe(commandH, height=300)
-
-        st.write("## Data Download")

@@ -1,97 +1,403 @@
 2022-07-20  17:18:02; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
 2022-07-20  17:18:02; DEBUG; InputParam init
-2022-07-20  17:18:07; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:18:18; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:18:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:18:40; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:18:51; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:19:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:19:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:18:07; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:18:18; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:18:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:18:40; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:18:51; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:19:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:19:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:32:57; DEBUG; app start
 2022-07-20  17:32:57; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
 2022-07-20  17:32:57; DEBUG; InputParam init
-2022-07-20  17:33:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:33:02; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:33:02; DEBUG; Execute command successfully in 2022-07-20 17:33:02.572477
-2022-07-20  17:33:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:33:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:33:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:33:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:33:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:33:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:33:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:33:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:33:45; DEBUG; Execute command successfully in 2022-07-20 17:33:45.637606
-2022-07-20  17:33:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:34:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:34:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:33:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:34:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:34:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:34:17; DEBUG; Execute command successfully in 2022-07-20 17:34:17.690154
-2022-07-20  17:34:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:34:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:39:27; DEBUG; app start
 2022-07-20  17:39:27; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
 2022-07-20  17:39:27; DEBUG; InputParam init
-2022-07-20  17:39:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:39:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:39:32; DEBUG; Execute command successfully in 2022-07-20 17:39:32.178651
-2022-07-20  17:39:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:39:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:39:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:39:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:39:53; DEBUG; Execute command successfully in 2022-07-20 17:39:53.220383
-2022-07-20  17:40:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:40:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:40:03; DEBUG; Execute command successfully in 2022-07-20 17:40:03.230549
-2022-07-20  17:40:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:40:24; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:40:35; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:40:46; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:40:13; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:40:24; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:40:35; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:40:46; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:41:12; DEBUG; app start
 2022-07-20  17:41:12; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
 2022-07-20  17:41:12; DEBUG; InputParam init
-2022-07-20  17:41:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:41:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:41:17; DEBUG; Execute command successfully in 2022-07-20 17:41:17.722869
-2022-07-20  17:41:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:41:38; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:41:49; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:00; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:11; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:22; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:42:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:43:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:43:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:43:28; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:43:39; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:43:50; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:01; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:44:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:45:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:45:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:45:30; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:45:41; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:45:52; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:14; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:25; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:36; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:47; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:46:58; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:47:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:47:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:47:31; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:47:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:47:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:04; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:15; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:26; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:37; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:48; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:48:59; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:49:10; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:49:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:49:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:49:43; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:49:54; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:41:27; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:41:38; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:41:49; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:00; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:11; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:22; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:42:55; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:43:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:43:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:43:28; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:43:39; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:43:50; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:01; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:12; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:23; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:44:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:45:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:45:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:45:30; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:45:41; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:45:52; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:03; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:14; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:25; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:36; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:47; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:46:58; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:47:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:47:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:47:31; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:47:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:47:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:04; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:15; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:26; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:37; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:48; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:48:59; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:49:10; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:49:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:49:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:49:43; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:49:54; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:50:02; DEBUG; app start
 2022-07-20  17:50:02; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
 2022-07-20  17:50:02; DEBUG; InputParam init
-2022-07-20  17:50:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
-2022-07-20  17:50:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:50:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-20  17:50:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
 2022-07-20  17:50:19; DEBUG; Execute command successfully in 2022-07-20 17:50:19.018012
-2022-07-20  17:50:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-20  17:50:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is could not open port '/dev/ttyUSB0': FileNotFoundError(2, 'ÏµÍ³ï¿½Ò²ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½', None, 3)
+2022-07-21  17:17:29; DEBUG; app start
+2022-07-21  17:17:29; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-21  17:17:29; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-21.db
+2022-07-21  17:17:29; DEBUG; InputParam init
+2022-07-21  17:19:25; ERROR; Execute command Fail in 2022-07-21 17:19:25.580492. Error is "port" must be None or a string, not <class 'int'>
+2022-07-21  17:27:57; DEBUG; app start
+2022-07-21  17:27:57; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-21  17:27:57; DEBUG; InputParam init
+2022-07-21  17:29:21; DEBUG; Execute command successfully in 2022-07-21 17:29:21.897217
+2022-07-21  17:36:20; DEBUG; app start
+2022-07-21  17:36:20; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-21  17:36:20; DEBUG; InputParam init
+2022-07-21  17:36:53; DEBUG; Execute command successfully in 2022-07-21 17:36:53.556066
+2022-07-21  22:37:40; DEBUG; Execute command successfully in 2022-07-21 22:37:40.080871
+2022-07-21  22:38:27; DEBUG; Execute command successfully in 2022-07-21 22:38:27.937462
+2022-07-22  00:00:05; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-22.db
+2022-07-25  10:25:14; DEBUG; app start
+2022-07-25  10:25:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  10:25:14; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-25.db
+2022-07-25  10:25:14; DEBUG; InputParam init
+2022-07-25  10:25:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:25:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:25:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:25:56; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:26:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:26:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:26:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:26:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:26:56; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:27:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:27:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:27:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:27:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:27:56; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:28:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:28:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:28:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:28:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:28:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:29:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:29:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:29:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:29:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:29:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:30:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:30:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:30:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:30:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:30:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:31:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:31:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:31:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:31:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:31:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:32:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:32:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:32:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:32:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:32:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:33:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:33:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:33:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:33:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:33:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:34:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:34:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:34:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:34:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:34:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:35:09; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:35:22; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:35:34; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:35:46; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:35:58; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:10; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:10; DEBUG; Execute command successfully in 2022-07-25 10:36:10.186655
+2022-07-25  10:36:21; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:33; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:45; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:57; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:36:57; DEBUG; Execute command successfully in 2022-07-25 10:36:57.471031
+2022-07-25  10:37:08; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:37:20; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:37:32; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:37:44; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:37:56; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:37:56; DEBUG; Execute command successfully in 2022-07-25 10:37:56.708055
+2022-07-25  10:38:07; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:38:19; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:38:19; DEBUG; Execute command successfully in 2022-07-25 10:38:19.862259
+2022-07-25  10:38:30; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:38:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:38:54; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:38:55; DEBUG; Execute command successfully in 2022-07-25 10:38:55.021122
+2022-07-25  10:39:06; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:39:18; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:39:30; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:39:42; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:39:42; DEBUG; Execute command successfully in 2022-07-25 10:39:42.193680
+2022-07-25  10:39:53; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:40:05; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:40:17; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:40:29; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:40:29; DEBUG; Execute command successfully in 2022-07-25 10:40:29.384166
+2022-07-25  10:40:40; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:40:52; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:41:04; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:41:16; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:41:28; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:41:40; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:41:52; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  10:42:04; ERROR; Error raised when execute Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  15:51:10; DEBUG; app start
+2022-07-25  15:51:10; CRITICAL; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json fail
+2022-07-25  15:52:04; DEBUG; app start
+2022-07-25  15:52:04; CRITICAL; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json fail
+2022-07-25  15:52:49; DEBUG; app start
+2022-07-25  15:52:49; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  15:52:49; DEBUG; InputParam init
+2022-07-25  15:52:55; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  15:53:08; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  15:56:48; DEBUG; app start
+2022-07-25  15:56:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  15:56:48; DEBUG; InputParam init
+2022-07-25  15:56:54; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  15:57:31; DEBUG; app start
+2022-07-25  15:57:31; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  15:57:31; DEBUG; InputParam init
+2022-07-25  15:57:37; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  15:58:19; DEBUG; app start
+2022-07-25  15:58:19; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  15:58:19; DEBUG; InputParam init
+2022-07-25  15:58:26; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  16:06:25; DEBUG; app start
+2022-07-25  16:06:25; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  16:06:25; DEBUG; InputParam init
+2022-07-25  16:06:31; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  16:06:55; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:35:19; DEBUG; app start
+2022-07-25  17:35:19; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  17:35:19; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-25.db
+2022-07-25  17:35:19; DEBUG; InputParam init
+2022-07-25  17:35:26; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:35:38; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:35:50; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:36:02; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:36:14; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:39:08; DEBUG; app start
+2022-07-25  17:39:08; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  17:39:08; DEBUG; InputParam init
+2022-07-25  17:39:15; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:39:27; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:39:39; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:39:52; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:40:04; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:40:16; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:40:28; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:40:40; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:40:53; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:41:05; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:41:17; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:41:29; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:41:41; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:41:54; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:42:06; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:42:18; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:42:30; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:42:43; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:42:55; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:43:07; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:43:19; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:43:20; ERROR; Execute command Fail in 2022-07-25 17:43:20.927109. Error is Response length is invalid 0
+2022-07-25  17:43:32; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:43:44; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:43:56; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:44:09; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:44:21; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:44:33; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:44:33; DEBUG; Execute command successfully in 2022-07-25 17:44:33.328238
+2022-07-25  17:44:44; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:44:56; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:45:08; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:45:21; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:45:33; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:45:45; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:45:57; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:46:10; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:46:22; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:46:34; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:46:46; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:46:58; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:47:10; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:47:22; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:47:35; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:47:47; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:47:59; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:48:11; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:48:23; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:48:35; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:48:47; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:49:00; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:49:12; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:49:24; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:49:36; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:49:49; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:50:01; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:50:13; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:50:25; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:50:37; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:50:49; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:51:02; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:51:14; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:51:26; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:51:38; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:51:50; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:52:03; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:52:15; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:52:27; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:52:39; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:52:51; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:53:04; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:53:16; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:53:28; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:53:40; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:53:53; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:54:05; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:54:17; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:54:29; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:54:41; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:54:53; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:55:05; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:55:17; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:55:29; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:55:41; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:55:53; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  17:56:05; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:20:56; DEBUG; app start
+2022-07-25  18:20:56; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  18:20:57; DEBUG; InputParam init
+2022-07-25  18:21:03; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:21:15; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:21:27; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:21:40; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:47:07; DEBUG; app start
+2022-07-25  18:47:07; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json successfully
+2022-07-25  18:47:07; DEBUG; InputParam init
+2022-07-25  18:47:13; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:47:38; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:47:50; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:48:28; ERROR; Error raised when execute Port-1_Baud-9600_ByteSize-8_Parity-None_Stop-1_FuncCode-3.json. Error is Response length is invalid 0
+2022-07-25  18:51:32; DEBUG; app start
+2022-07-25  18:51:32; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/çƒ­æ³µ.json successfully
+2022-07-25  18:51:32; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/é£Žç›˜æ¸©æŽ§å™¨.json successfully
+2022-07-25  18:51:32; DEBUG; InputParam init
+2022-07-25  18:52:20; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  18:58:51; DEBUG; app start
+2022-07-25  18:58:51; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/çƒ­æ³µ.json successfully
+2022-07-25  18:58:51; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/é£Žç›˜æ¸©æŽ§å™¨.json successfully
+2022-07-25  18:58:51; DEBUG; InputParam init
+2022-07-25  18:58:59; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  18:59:39; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  18:59:52; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:00:19; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:03:15; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:04:09; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:04:22; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:05:57; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:06:23; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:08:52; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:09:32; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:10:13; DEBUG; Execute command successfully in 2022-07-25 19:10:13.306128
+2022-07-25  19:10:25; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:11:19; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:11:32; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:11:59; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:12:12; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:13:06; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:13:20; DEBUG; Execute command successfully in 2022-07-25 19:13:20.371704
+2022-07-25  19:14:13; DEBUG; Execute command successfully in 2022-07-25 19:14:13.475117
+2022-07-25  19:15:19; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:16:27; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:16:40; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:17:21; DEBUG; Execute command successfully in 2022-07-25 19:17:21.190012
+2022-07-25  19:18:27; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:20:42; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:20:42; DEBUG; Execute command successfully in 2022-07-25 19:20:42.622080
+2022-07-25  19:21:21; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:21:21; DEBUG; Execute command successfully in 2022-07-25 19:21:21.996675
+2022-07-25  19:22:28; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:22:41; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:23:35; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:24:56; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:25:36; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:26:03; DEBUG; Execute command successfully in 2022-07-25 19:26:03.841962
+2022-07-25  19:26:29; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:26:43; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:26:43; DEBUG; Execute command successfully in 2022-07-25 19:26:43.077393
+2022-07-25  19:27:08; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:27:35; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:27:49; DEBUG; Execute command successfully in 2022-07-25 19:27:49.488744
+2022-07-25  19:28:15; DEBUG; Execute command successfully in 2022-07-25 19:28:15.575406
+2022-07-25  19:29:49; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:31:50; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:32:30; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:34:05; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0
+2022-07-25  19:34:18; ERROR; Error raised when execute é£Žç›˜æ¸©æŽ§å™¨.json. Error is Response length is invalid 0

@@ -1,0 +1,52 @@
+{
+    "Port": 1,
+    "Baud": 9600,
+    "ByteSize": 8,
+    "Parity": "N",
+    "Stop": 1,
+    "FuncCode": 3,
+    "Actions(ParamName, SlaveID, Address, Factor)": [
+        [
+            "热泵_Ability_of_Hydraulic_module(kW)",
+            1,
+            140,
+            0.01
+        ],
+        [
+            "热泵_Outdoor_unit_current(A)",
+            1,
+            118,
+            1
+        ],
+        [
+            "热泵_Outdoor_unit_voltage(V)",
+            1,
+            119,
+            1
+        ],
+        [
+            "热泵_Water_outlet_temperature(℃)",
+            1,
+            105,
+            1
+        ],
+        [
+            "热泵_Water_inlet_temperature(℃)",
+            1,
+            104,
+            1
+        ],
+        [
+            "热泵_Water_flow(m3)",
+            1,
+            138,
+            0.01
+        ],
+        [
+            "热泵_Ambient_temperature(℃)",
+            1,
+            107,
+            1
+        ]
+    ]
+}
