@@ -1,3 +1,3 @@
 #!/bin/bash
 source ./venv/bin/activate
-python3 -m streamlit run ./Sever.py
+python3 ./ModbusCOM.py

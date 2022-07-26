@@ -401,3 +401,60 @@
 2022-07-25  19:32:30; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
 2022-07-25  19:34:05; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
 2022-07-25  19:34:18; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  10:53:41; DEBUG; app start
+2022-07-26  10:53:41; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-07-26  10:53:41; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-07-26  10:53:41; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-26.db
+2022-07-26  10:53:41; DEBUG; InputParam init
+2022-07-26  10:55:10; DEBUG; app start
+2022-07-26  10:55:10; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-07-26  10:55:10; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-07-26  10:55:10; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-26.db
+2022-07-26  10:55:10; DEBUG; InputParam init
+2022-07-26  10:55:17; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  10:55:58; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:07:29; DEBUG; app start
+2022-07-26  11:07:29; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-07-26  11:07:29; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-07-26  11:07:29; DEBUG; Create new database at: /home/pi/Desktop/SteppeArkSever/database/2022-07-26.db
+2022-07-26  11:07:29; DEBUG; InputParam init
+2022-07-26  11:08:03; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:08:30; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:08:43; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:09:24; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:09:37; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:11:25; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:11:52; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:12:05; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:12:19; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:18:21; DEBUG; app start
+2022-07-26  11:18:21; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-07-26  11:18:21; DEBUG; InputParam init
+2022-07-26  11:18:27; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:18:39; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:19:15; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:19:40; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:20:04; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:21:42; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:21:54; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:22:06; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:23:32; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:23:44; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:24:21; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:24:34; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:26:12; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:27:13; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:29:28; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:29:52; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:30:16; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:30:28; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:30:40; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:30:52; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:31:04; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:31:29; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:32:05; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:32:54; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-07-26  11:48:28; DEBUG; app start
+2022-07-26  11:48:28; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-07-26  11:48:28; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-07-26  11:48:28; DEBUG; InputParam init

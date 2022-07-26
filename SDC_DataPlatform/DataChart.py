@@ -261,7 +261,7 @@ def show():
 
     if "df" in dir():
         with st.expander(f"Data Download"):
-                download_csv = df.to_csv().encode("ANSI")
+                download_csv = df.to_csv().encode("gbk")
                 st.download_button("download selected data",download_csv,fromDate.strftime('%Y-%m-%d') + "to" + todate.strftime('%Y-%m-%d') + ".csv")
 
 
