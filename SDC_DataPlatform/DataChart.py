@@ -19,7 +19,7 @@ def SampleData(data: list, count: int, eleNum: int):
     res = []
     if len(data) * (count * eleNum) == 0:
         return res
-    if len(data) < 300:
+    if len(data) < (count * eleNum):
         width = 1;
     else:
         width = int(len(data) / (count * eleNum))
@@ -261,8 +261,8 @@ def show():
 
     if "df" in dir():
         with st.expander(f"Data Download"):
-                download_csv = df.to_csv().encode("utf-8")
-                st.download_button("download selected data",download_csv,fromDate + todate)
+                download_csv = df.to_csv().encode("ANSI")
+                st.download_button("download selected data",download_csv,fromDate.strftime('%Y-%m-%d') + "to" + todate.strftime('%Y-%m-%d') + ".csv")
 
 
 

@@ -88,6 +88,8 @@ def QueryData(time, name):
         db.close()
 
         return data
+    else:
+        return []
 
 
 def QueryDataLabel(time):
