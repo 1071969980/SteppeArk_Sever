@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import SDC_DataPlatform as SDC
 from SDC_DataPlatform import sidebar as SDC_sidebar
 from SDC_DataPlatform import RealtimeData as SDC_RealTimeData

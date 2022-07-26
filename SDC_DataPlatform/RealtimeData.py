@@ -13,7 +13,9 @@ def show():
     """
     )
 
-    data = SDC.QueryRuntimeData()
+    search = st.text_input("Search")
+
+    data = SDC.QueryRuntimeData(search)
     cols = st.columns(4)
     foos = []
 
@@ -24,13 +26,8 @@ def show():
         foos[i].metric(data[i][1],data[i][2])
 
 
-    while True:
-        if ss.Page != SDC.Pages[0]:
-            break
-
-        data = SDC.QueryRuntimeData()
-
-        for i in range(len(data)):
-            foos[i].metric(data[i][1], data[i][2])
-
-        time.sleep(3)
+    st.write(
+    """
+    ### press "R" to refresh
+    """
+    )

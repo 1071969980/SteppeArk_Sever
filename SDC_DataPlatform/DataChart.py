@@ -31,10 +31,11 @@ def SampleData(data: list, count: int, eleNum: int):
     return res
 
 
-def ExtractLabel(data, i):
+def ExtractLabel(dates):
     lables = []
-    for item in data:
-        lables.append(item[i])
+    for date in dates:
+        lable = SDC.QueryDataLabel(date)
+        lables.extend(lable)
     return list(set(lables))
 
 
@@ -213,12 +214,12 @@ def show():
             fromDate = st.date_input("From", key=f"Chart{i + 1}FromDate")
             todate = st.date_input("To", key=f"Chart{i + 1}ToDate")
 
-            runtimeData = SDC.QueryRuntimeData()
-            labels = ExtractLabel(runtimeData, 1)
+            dates = GetDateList(fromDate, todate)
+
+            labels = ExtractLabel(dates)
             elements = st.multiselect(f"Chart {i + 1} elements", labels, key=f"Chart{i + 1}Elements")
 
             if elements:
-                dates = GetDateList(fromDate, todate)
 
                 data = []
                 for date in dates:
@@ -226,6 +227,7 @@ def show():
                         ex = SDC.QueryData(date, ele)
                         for j in range(len(ex)):
                             ex[j] = list(ex[j])
+                            # 在时间前面加上日期
                             ex[j][1] = date + " " + ex[j][1]
                         data.extend(ex)
                 sampled_data = SampleData(data, 300, len(elements))
@@ -257,8 +259,11 @@ def show():
                     else:
                         st.altair_chart(GetChart(df, elements, 1, width))
 
-    with st.expander(f"Data Download"):
-        fromDownloadDate = st.date_input("From")
-        toDownloadDate = st.date_input("To")
+    if "df" in dir():
+        with st.expander(f"Data Download"):
+                download_csv = df.to_csv().encode("utf-8")
+                st.download_button("download selected data",download_csv,fromDate + todate)
+
+
 
 

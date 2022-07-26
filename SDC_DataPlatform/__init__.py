@@ -50,12 +50,25 @@ def QueryRuntimeGlobalParams():
     return data
 
 
-def QueryRuntimeData():
+def QueryRuntimeData(name: str=""):
     db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
     runtime_db = sqlite3.connect(db_path)
     runtime_cursor = runtime_db.cursor()
 
-    runtime_cursor.execute("select * from InputParam")
+    if not name:
+        runtime_cursor.execute("select * from InputParam")
+    else:
+        splitname = name.split()
+        if len(splitname)>1:
+            sqlconditions = []
+            for re in splitname:
+                sqlconditions.append(f"name like '%{re}%'")
+            sqlcondition = " and ".join(sqlconditions)
+            runtime_cursor.execute(f"select * from InputParam where {sqlcondition}")
+
+        else:
+            runtime_cursor.execute(f"select * from InputParam where name like '%{name}%'")
+
 
     data = runtime_cursor.fetchall()
 
@@ -75,6 +88,26 @@ def QueryData(time, name):
         db.close()
 
         return data
+
+
+def QueryDataLabel(time):
+    db_path = os.path.abspath(os.path.join(os.getcwd(), f"database/{time}.db"))
+    if os.path.exists(db_path):
+        db = sqlite3.connect(db_path)
+        cursor = db.cursor()
+        cursor.execute("SELECT DISTINCT name FROM table01")
+        data = cursor.fetchall()
+
+        db.close()
+
+        dataL = []
+        for row in data:
+            dataL.append(row[0])
+
+        return dataL
+
+    else:
+        return []
 
 
 def QueryCommandHistory():
