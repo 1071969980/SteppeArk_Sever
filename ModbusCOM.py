@@ -20,6 +20,12 @@ class Runtime(Enum):
     Global = 3
 
 
+#TODO 创建管理modbus master的单例
+#class ModbusMaster:
+
+
+
+
 def DebugLog(mesg):
     print(f"DEBUG: {mesg}")
     logger.debug(mesg)

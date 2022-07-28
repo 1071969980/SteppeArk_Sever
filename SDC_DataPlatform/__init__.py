@@ -136,14 +136,7 @@ def VerifyPassword(password: str):
         st.session_state["admin"] = True
 
 
-class Command:
-    describe = ""
-    type = ""
-
-
-class ParamCommand(Command):
-    paramName = ""
-    value = 0
+class ParamCommand:
 
     def __init__(self, name: str, value: float, describe: str = "No Describe"):
         self.describe = describe
@@ -160,7 +153,7 @@ class ParamCommand(Command):
         return cls(d["paramName"], d["value"], d["describe"])
 
 
-class ModbusCommand(Command):
+class ModbusCommand:
 
     def __init__(self, port, baudrate, bytesize, parity, stopbits,
                  slaveID, functionCode, address, outputValue, describe: str = "No Describe"):
