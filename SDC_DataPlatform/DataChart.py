@@ -232,10 +232,10 @@ def show():
                         data.extend(ex)
                 sampled_data = SampleData(data, 300, len(elements))
 
-                df = pd.DataFrame(sampled_data, columns=["id", "time", "name", "value"])
-                df["time"] = df["time"].map(lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S'))
-                df["time"] = df["time"].dt.tz_localize('Asia/ShangHai')
-                df = df.pivot(index="time", columns="name", values="value").reset_index()
+                raw_df = pd.DataFrame(sampled_data, columns=["id", "time", "name", "value"])
+                raw_df["time"] = raw_df["time"].map(lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S'))
+                raw_df["time"] = raw_df["time"].dt.tz_localize('Asia/ShangHai')
+                df = raw_df.pivot(index="time", columns="name", values="value").reset_index()
 
                 # 只选取了一种数据
                 if len(elements) == 1:
@@ -261,7 +261,7 @@ def show():
 
     if "df" in dir():
         with st.expander(f"Data Download"):
-                download_csv = df.to_csv().encode("gbk")
+                download_csv = raw_df.to_csv().encode("gbk")
                 st.download_button("download selected data",download_csv,fromDate.strftime('%Y-%m-%d') + "to" + todate.strftime('%Y-%m-%d') + ".csv")
 
 
