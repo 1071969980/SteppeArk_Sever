@@ -7,23 +7,16 @@ import os
 import sqlite3
 import configparser
 from enum import Enum
-import serial
 import modbus_tk
-from modbus_tk import modbus_rtu
 import zmq
 import SDC_DataPlatform as SDC
+from SDC_DataPlatform.ModbusSingleton import ModbusRTU_Singleton
 
 
 class Runtime(Enum):
     Input = 1
     Output = 2
     Global = 3
-
-
-#TODO 创建管理modbus master的单例
-#class ModbusMaster:
-
-
 
 
 def DebugLog(mesg):
@@ -113,23 +106,20 @@ def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: 
                 port = cf.get("Port Define", "port01")
             else:
                 port = cf.get("Port Define", "port02")
-            master = modbus_rtu.RtuMaster(serial.Serial(
-                port=port,baudrate=c.baudrate,bytesize=c.bytesize,parity=c.parity,stopbits=c.stopbits
-            ))
-            master.set_timeout(1.0)
+            ModbusRTU_Singleton.InitPort(
+                port,c.baudrate,c.bytesize,c.parity,c.stopbits
+            )
             #写操作
             if [5,6].count(c.functionCode) != 0:
-                res = master.execute(c.slaveID, c.functionCode,c.address,1,c.outputValue)
+                res = ModbusRTU_Singleton.master.execute(c.slaveID, c.functionCode,c.address,1,c.outputValue)
             else:
-                res = master.execute(c.slaveID, c.functionCode,c.address,1)
+                res = ModbusRTU_Singleton.master.execute(c.slaveID, c.functionCode,c.address,1)
             DebugLog(f"Execute command successfully in {str(datetime.now())}")
             RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, f"Success,result: {res}")
         except Exception as e:
             RecordCommandHistory(cursor, str(datetime.now().strftime('%Y-%m-%d  %H:%M:%S')), command, "Failed")
             ErrorLog(f"Execute command Fail in {str(datetime.now())}. Error is {e.__str__()}")
         finally:
-            if 'master' in dir():
-                master.close()
             db.commit()
 
 
@@ -287,9 +277,9 @@ if __name__ == "__main__":
                     port = cf.get("Port Define", "port01")
                 else:
                     port = cf.get("Port Define", "port02")
-                master = modbus_rtu.RtuMaster(serial.Serial(
-                    port=port, baudrate=baud, bytesize=byteSize, parity=parity, stopbits=stopBits))
-                master.set_timeout(1.0)
+                ModbusRTU_Singleton.InitPort(
+                    port, baud, byteSize, parity, stopBits
+                )
                 # 查找Action的字典键值
                 for key, value in D.items():
                     if key.find("Action") != -1:
@@ -300,7 +290,7 @@ if __name__ == "__main__":
                     slaveID = action[1]
                     address = action[2]
                     factor = action[3]
-                    res = master.execute(slaveID, functionCode, address, 1)
+                    res = ModbusRTU_Singleton.master.execute(slaveID, functionCode, address, 1)
                     if factor != 1:
                         res = round((res[0]) * factor, 2)
                     else:
@@ -313,15 +303,11 @@ if __name__ == "__main__":
 
                     UpdateDataToRuntimeSQL(runtime_cursor, Runtime.Input, paramName, res)
 
-                master.close()
-                print("wait for serial port ready")
-                time.sleep(switchPortInterval)
+
 
             except Exception as e:
                 index = jsonD.index(D)
                 ErrorLog(f"Error raised when execute {masterDefs[index]}. Error is {e.__str__()}")
-                if 'master' in dir():
-                    master.close()
             finally:
                 db.commit()
                 runtime_db.commit()
