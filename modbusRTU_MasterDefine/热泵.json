@@ -7,43 +7,43 @@
     "FuncCode": 3,
     "Actions(ParamName, SlaveID, Address, Factor)": [
         [
-            "热泵_Ability_of_Hydraulic_module(kW)",
+            "热泵_Ability_of_Hydraulic_module_kW",
             1,
             140,
             0.01
         ],
         [
-            "热泵_Outdoor_unit_current(A)",
+            "热泵_Outdoor_unit_current_A",
             1,
             118,
             1
         ],
         [
-            "热泵_Outdoor_unit_voltage(V)",
+            "热泵_Outdoor_unit_voltage_V",
             1,
             119,
             1
         ],
         [
-            "热泵_Water_outlet_temperature(℃)",
+            "热泵_Water_outlet_temperature_C",
             1,
             105,
             1
         ],
         [
-            "热泵_Water_inlet_temperature(℃)",
+            "热泵_Water_inlet_temperature_C",
             1,
             104,
             1
         ],
         [
-            "热泵_Water_flow(m3)",
+            "热泵_Water_flow_m3",
             1,
             138,
             0.01
         ],
         [
-            "热泵_Ambient_temperature(℃)",
+            "热泵_Ambient_temperature_C",
             1,
             107,
             1
