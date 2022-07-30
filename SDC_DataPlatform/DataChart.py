@@ -210,7 +210,7 @@ def show():
     ChartNum = st.number_input("How many data chart to show", min_value=1, max_value=6, value=1, key="ChartNum")
 
     for i in range(ChartNum):
-        with st.expander(f"DataChart {i + 1}"):
+        with st.form(f"DataChart {i + 1}"):
             fromDate = st.date_input("From", key=f"Chart{i + 1}FromDate")
             todate = st.date_input("To", key=f"Chart{i + 1}ToDate")
 
@@ -218,6 +218,8 @@ def show():
 
             labels = ExtractLabel(dates)
             elements = st.multiselect(f"Chart {i + 1} elements", labels, key=f"Chart{i + 1}Elements")
+
+            st.form_submit_button("Generate Chart")
 
             if elements:
 
@@ -259,10 +261,17 @@ def show():
                     else:
                         st.altair_chart(GetChart(df, elements, 1, width))
 
-    if "df" in dir():
-        with st.expander(f"Data Download"):
-                download_csv = df.to_csv().encode("gbk")
-                st.download_button("download selected data",download_csv,fromDate.strftime('%Y-%m-%d') + "to" + todate.strftime('%Y-%m-%d') + ".csv")
+    with st.expander(f"Data Download"):
+        prepareDownloadButton = st.button("prepareDownload")
+        if prepareDownloadButton:
+            st.info("Preparing for download")
+            download_df = pd.DataFrame(data, columns=["id", "time", "name", "value"])
+            download_df["time"] = download_df["time"].map(lambda x: pd.to_datetime(x, format='%Y-%m-%d %H:%M:%S'))
+            download_df["time"] = download_df["time"].dt.tz_localize('Asia/ShangHai')
+            download_df = download_df.pivot(index="time", columns="name", values="value").reset_index()
+            download_csv = download_df.to_csv().encode("gbk")
+            st.info("Preparation of the download is complete")
+            st.download_button("download selected data",download_csv,fromDate.strftime('%Y-%m-%d') + "to" + todate.strftime('%Y-%m-%d') + ".csv")
 
 
 

@@ -1,4 +1,5 @@
 {
+    "Readonly": 0,
     "Port": 1,
     "Baud": 9600,
     "ByteSize": 8,

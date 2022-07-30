@@ -124,6 +124,8 @@ def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: 
 
 
 
+
+
 if __name__ == "__main__":
 
     # region ——————配置log格式——————
@@ -266,6 +268,7 @@ if __name__ == "__main__":
         # region ——————主站读取数据——————
         # 循环读取每一个主站定义
         for D in jsonD:
+            readonly = D["Readonly"]
             port = D["Port"]
             baud = D["Baud"]
             byteSize = D["ByteSize"]
@@ -296,10 +299,11 @@ if __name__ == "__main__":
                     else:
                         res = res[0]
                     print(f"{paramName} = {res} (read from slave {slaveID})")
-                    SaveDataToPersistenceSQL(cursor,
-                                             time.strftime("%H:%M:%S", time.localtime()),
-                                             paramName,
-                                             res)
+                    if not readonly:
+                        SaveDataToPersistenceSQL(cursor,
+                                                 time.strftime("%H:%M:%S", time.localtime()),
+                                                 paramName,
+                                                 res)
 
                     UpdateDataToRuntimeSQL(runtime_cursor, Runtime.Input, paramName, res)
 

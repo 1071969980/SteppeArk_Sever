@@ -20,7 +20,7 @@ class ModbusRTU_Singleton:
         if ModbusRTU_Singleton.port_name != port_name or ModbusRTU_Singleton.baud != baud or ModbusRTU_Singleton.byteSize != byteSize or ModbusRTU_Singleton.parity != parity or ModbusRTU_Singleton.stopBits != stopBits:
             if ModbusRTU_Singleton.master is not None:
                 ModbusRTU_Singleton.master.close()
-                print("Master define is dhanged.Wait for serial port ready")
+                print("Master define is changed.Wait for serial port ready")
                 time.sleep(switchPortInterval)
         ModbusRTU_Singleton.master = modbus_rtu.RtuMaster(serial.Serial(
             port=port_name, baudrate=baud, bytesize=byteSize, parity=parity, stopbits=stopBits))
