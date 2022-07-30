@@ -10,7 +10,10 @@ from enum import Enum
 import modbus_tk
 import zmq
 import SDC_DataPlatform as SDC
-from SDC_DataPlatform.ModbusSingleton import ModbusRTU_Singleton
+
+# region 全局参数
+switchPortInterval = 1
+# endregion
 
 
 class Runtime(Enum):
@@ -245,6 +248,8 @@ if __name__ == "__main__":
     for i in range(5):
         time.sleep(1)
         print(f"{5 - i}...")
+
+    from SDC_DataPlatform.ModbusSingleton import ModbusRTU_Singleton
 
     # 开始读取数据的循环
     while True:
