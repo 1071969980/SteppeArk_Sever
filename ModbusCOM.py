@@ -13,6 +13,8 @@ import SDC_DataPlatform as SDC
 
 # region 全局参数
 switchPortInterval = 1
+loopTimes = 0
+maxLoop = 100000
 # endregion
 
 
@@ -20,6 +22,14 @@ class Runtime(Enum):
     Input = 1
     Output = 2
     Global = 3
+
+def NextLoop():
+    global loopTimes
+    if loopTimes<maxLoop:
+        loopTimes += 1
+    else:
+        loopTimes = 0
+
 
 
 def DebugLog(mesg):
@@ -187,7 +197,7 @@ if __name__ == "__main__":
     try:
         cf = configparser.ConfigParser()
         cf.read(configPath)
-        readInterval = int(cf.get("Port Define", "read_interval"))
+        loopInterval = int(cf.get("Port Define", "loop_interval"))
         switchPortInterval = int(cf.get("Port Define", "switch_port_interval"))
     except Exception as e:
         CriticalToExit(f"Critical error raise. Error is {e.__str__()}")
@@ -273,58 +283,60 @@ if __name__ == "__main__":
         # region ——————主站读取数据——————
         # 循环读取每一个主站定义
         for D in jsonD:
-            readonly = D["Readonly"]
-            port = D["Port"]
-            baud = D["Baud"]
-            byteSize = D["ByteSize"]
-            parity = D["Parity"]
-            stopBits = D["Stop"]
-            functionCode = D["FuncCode"]
-            try:
-                if port == 0:
-                    port = cf.get("Port Define", "port01")
-                else:
-                    port = cf.get("Port Define", "port02")
-                ModbusRTU_Singleton.InitPort(
-                    port, baud, byteSize, parity, stopBits
-                )
-                # 查找Action的字典键值
-                for key, value in D.items():
-                    if key.find("Action") != -1:
-                        actionKey = key
-                # 循环执行定义中的动作
-                for action in D[actionKey]:
-                    paramName = action[0]
-                    slaveID = action[1]
-                    address = action[2]
-                    factor = action[3]
-                    res = ModbusRTU_Singleton.master.execute(slaveID, functionCode, address, 1)
-                    if factor != 1:
-                        res = round((res[0]) * factor, 2)
+            readInterval = D["ReadInterval"]
+            if loopTimes % readInterval == 0:
+                readonly = D["Readonly"]
+                port = D["Port"]
+                baud = D["Baud"]
+                byteSize = D["ByteSize"]
+                parity = D["Parity"]
+                stopBits = D["Stop"]
+                functionCode = D["FuncCode"]
+                try:
+                    if port == 0:
+                        port = cf.get("Port Define", "port01")
                     else:
-                        res = res[0]
-                    print(f"{paramName} = {res} (read from slave {slaveID})")
-                    if not readonly:
-                        SaveDataToPersistenceSQL(cursor,
-                                                 time.strftime("%H:%M:%S", time.localtime()),
-                                                 paramName,
-                                                 res)
+                        port = cf.get("Port Define", "port02")
+                    ModbusRTU_Singleton.InitPort(
+                        port, baud, byteSize, parity, stopBits
+                    )
+                    # 查找Action的字典键值
+                    for key, value in D.items():
+                        if key.find("Action") != -1:
+                            actionKey = key
+                    # 循环执行定义中的动作
+                    for action in D[actionKey]:
+                        paramName = action[0]
+                        slaveID = action[1]
+                        address = action[2]
+                        factor = action[3]
+                        res = ModbusRTU_Singleton.master.execute(slaveID, functionCode, address, 1)
+                        if factor != 1:
+                            res = round((res[0]) * factor, 2)
+                        else:
+                            res = res[0]
+                        print(f"{paramName} = {res} (read from slave {slaveID})")
+                        if not readonly:
+                            SaveDataToPersistenceSQL(cursor,
+                                                     time.strftime("%H:%M:%S", time.localtime()),
+                                                     paramName,
+                                                     res)
 
-                    UpdateDataToRuntimeSQL(runtime_cursor, Runtime.Input, paramName, res)
+                        UpdateDataToRuntimeSQL(runtime_cursor, Runtime.Input, paramName, res)
 
 
 
-            except Exception as e:
-                index = jsonD.index(D)
-                ErrorLog(f"Error raised when execute {masterDefs[index]}. Error is {e.__str__()}")
-            finally:
-                db.commit()
-                runtime_db.commit()
+                except Exception as e:
+                    index = jsonD.index(D)
+                    ErrorLog(f"Error raised when execute {masterDefs[index]}. Error is {e.__str__()}")
+                finally:
+                    db.commit()
+                    runtime_db.commit()
 
         # endregion
 
         # region ——————网站指令行为——————
-        socks = dict(poller.poll(1000))
+        socks = dict(poller.poll(loopInterval*500))
 
         if socks:
             if socks.get(comSocket) == zmq.POLLIN:
@@ -337,5 +349,6 @@ if __name__ == "__main__":
 
         # endregion
 
-        print(f"sleep for next COM  ({int(readInterval)}s)")
-        time.sleep(readInterval)
+        time.sleep(loopInterval/2)
+        print(f"loop {loopTimes}")
+        NextLoop()

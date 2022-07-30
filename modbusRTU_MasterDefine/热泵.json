@@ -1,5 +1,6 @@
 {
     "Readonly": 0,
+    "ReadInterval":20,
     "Port": 1,
     "Baud": 9600,
     "ByteSize": 8,

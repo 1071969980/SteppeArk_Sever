@@ -262,7 +262,7 @@ def show():
                         st.altair_chart(GetChart(df, elements, 1, width))
 
     with st.expander(f"Data Download"):
-        prepareDownloadButton = st.button("prepareDownload")
+        prepareDownloadButton = st.button("Prepare Download")
         if prepareDownloadButton:
             st.info("Preparing for download")
             download_df = pd.DataFrame(data, columns=["id", "time", "name", "value"])

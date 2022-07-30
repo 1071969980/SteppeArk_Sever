@@ -781,3 +781,57 @@
 2022-07-28  16:08:08; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/çƒ­æ³µ.json successfully
 2022-07-28  16:08:08; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/é£Žç›˜æ¸©æŽ§å™¨.json successfully
 2022-07-28  16:08:08; DEBUG; InputParam init
+2022-07-30  11:38:10; DEBUG; app start
+2022-07-30  11:38:10; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-07-30  11:38:10; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-07-30  11:38:10; DEBUG; Create new database at: C:/Users/GMH/Desktop/SteppeArkSever\database\2022-07-30.db
+2022-07-30  11:38:10; DEBUG; InputParam init
+2022-07-30  11:38:15; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:15; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:16; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:16; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:17; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:17; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:18; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:18; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:19; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:19; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:20; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:20; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:21; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:38:21; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:10; DEBUG; app start
+2022-07-30  11:41:10; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-07-30  11:41:10; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-07-30  11:41:10; DEBUG; InputParam init
+2022-07-30  11:41:15; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:15; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:16; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:16; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:17; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:17; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:18; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:18; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:19; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:19; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:20; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:20; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:21; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:21; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:22; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:22; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:41; DEBUG; app start
+2022-07-30  11:41:41; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-07-30  11:41:41; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-07-30  11:41:41; DEBUG; InputParam init
+2022-07-30  11:41:47; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:41:47; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:42:07; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:42:17; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:42:27; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:43:21; DEBUG; app start
+2022-07-30  11:43:21; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-07-30  11:43:21; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-07-30  11:43:21; DEBUG; InputParam init
+2022-07-30  11:43:26; ERROR; Error raised when execute ÈÈ±Ã.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
+2022-07-30  11:43:26; ERROR; Error raised when execute ·çÅÌÎÂ¿ØÆ÷.json. Error is could not open port '/dev/ttyUSB1': FileNotFoundError(2, 'ÏµÍ³ÕÒ²»µ½Ö¸¶¨µÄÂ·¾¶¡£', None, 3)
