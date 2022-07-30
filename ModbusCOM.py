@@ -315,12 +315,14 @@ if __name__ == "__main__":
                             res = round((res[0]) * factor, 2)
                         else:
                             res = res[0]
-                        print(f"{paramName} = {res} (read from slave {slaveID})")
                         if not readonly:
                             SaveDataToPersistenceSQL(cursor,
                                                      time.strftime("%H:%M:%S", time.localtime()),
                                                      paramName,
                                                      res)
+                            print(f"{paramName} = {res} (read from slave {slaveID})")
+                        else:
+                            print(f"{paramName} = {res} (read from slave {slaveID},readonly)")
 
                         UpdateDataToRuntimeSQL(runtime_cursor, Runtime.Input, paramName, res)
 
@@ -350,5 +352,4 @@ if __name__ == "__main__":
         # endregion
 
         time.sleep(loopInterval/2)
-        print(f"loop {loopTimes}")
         NextLoop()

@@ -1,0 +1,37 @@
+{
+    "Readonly": 0,
+    "ReadInterval":30,
+    "Port": 1,
+    "Baud": 9600,
+    "ByteSize": 8,
+    "Parity": "N",
+    "Stop": 1,
+    "FuncCode": 3,
+    "Actions(ParamName, SlaveID, Address, Factor)": [
+        [
+            "气体传感器_次卧_温度",
+            11,
+            3,
+            0.1
+        ],
+        [
+            "气体传感器_次卧_湿度",
+            11,
+            2,
+            0.1
+        ],
+        [
+            "气体传感器_次卧_二氧化碳",
+            11,
+            8,
+            1
+        ],
+        [
+            "气体传感器_次卧_PM2.5",
+            11,
+            0,
+            1
+        ]
+
+    ]
+}
