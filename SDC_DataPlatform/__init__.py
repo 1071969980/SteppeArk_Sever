@@ -105,6 +105,7 @@ def QueryDataLabel(time):
         dataL = []
         for row in data:
             dataL.append(row[0])
+        dataL.sort()
 
         return dataL
 

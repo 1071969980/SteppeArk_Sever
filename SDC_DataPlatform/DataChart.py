@@ -37,7 +37,9 @@ def ExtractLabel(dates):
     for date in dates:
         lable = SDC.QueryDataLabel(date)
         lables.extend(lable)
-    return list(set(lables))
+    lables = list(set(lables))
+    lables.sort()
+    return lables
 
 
 def GetChart(df: pd.DataFrame, eles: list, mode=0, width=1680):
@@ -247,7 +249,7 @@ def show():
 
                 # 选取了两种数据，可以使用双Y轴表示法
                 elif len(elements) == 2:
-                    isDualaxis = st.checkbox(f"Chart{i+1}_Dual_Y_Axis")
+                    isDualaxis = st.checkbox(f"Chart{i+1}_Dual_Y_Axis",True)
                     if isDualaxis:
                         st.altair_chart(GetChart_DualAxis(df, elements), use_container_width=True)
                     else:
