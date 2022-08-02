@@ -17638,3 +17638,108 @@
 2022-08-02  15:07:32; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
 2022-08-02  15:07:38; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
 2022-08-02  15:08:01; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:11:52; DEBUG; app start
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/主卧气体传感器.json successfully
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/热泵.json successfully
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/大厅气体传感器.json successfully
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/只读.json successfully
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/次卧气体传感器.json successfully
+2022-08-02  15:11:52; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-08-02  15:11:52; DEBUG; InputParam init
+2022-08-02  15:11:59; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:12:01; ERROR; Execute command Fail in 2022-08-02 15:12:01.643787. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:04; ERROR; Execute command Fail in 2022-08-02 15:12:04.675572. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:07; ERROR; Execute command Fail in 2022-08-02 15:12:07.707596. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:10; ERROR; Execute command Fail in 2022-08-02 15:12:10.735534. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:13; ERROR; Execute command Fail in 2022-08-02 15:12:13.767527. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:17; ERROR; Execute command Fail in 2022-08-02 15:12:17.059731. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:20; ERROR; Execute command Fail in 2022-08-02 15:12:20.091593. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:23; ERROR; Execute command Fail in 2022-08-02 15:12:23.127519. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:26; ERROR; Execute command Fail in 2022-08-02 15:12:26.159421. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:29; ERROR; Execute command Fail in 2022-08-02 15:12:29.191644. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:32; ERROR; Execute command Fail in 2022-08-02 15:12:32.499516. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:35; ERROR; Execute command Fail in 2022-08-02 15:12:35.531528. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:38; ERROR; Execute command Fail in 2022-08-02 15:12:38.563392. Error is Modbus Error: Exception code = 3
+2022-08-02  15:12:41; ERROR; Execute command Fail in 2022-08-02 15:12:41.591417. Error is Modbus Error: Exception code = 3
+2022-08-02  15:13:02; DEBUG; app start
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/主卧气体传感器.json successfully
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/大厅气体传感器.json successfully
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/只读.json successfully
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/次卧气体传感器.json successfully
+2022-08-02  15:13:02; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-08-02  15:13:02; DEBUG; InputParam init
+2022-08-02  15:13:09; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:13:11; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:13:21; DEBUG; Execute command successfully in 2022-08-02 15:13:21.677214
+2022-08-02  15:13:22; DEBUG; Execute command successfully in 2022-08-02 15:13:22.731913
+2022-08-02  15:13:23; DEBUG; Execute command successfully in 2022-08-02 15:13:23.803552
+2022-08-02  15:13:24; DEBUG; Execute command successfully in 2022-08-02 15:13:24.859352
+2022-08-02  15:13:25; DEBUG; Execute command successfully in 2022-08-02 15:13:25.915200
+2022-08-02  15:13:27; DEBUG; Execute command successfully in 2022-08-02 15:13:27.227071
+2022-08-02  15:13:28; DEBUG; Execute command successfully in 2022-08-02 15:13:28.283061
+2022-08-02  15:13:33; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:13:46; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:14:08; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:14:20; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:14:32; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:14:55; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:15:01; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:15:29; ERROR; Error raised when execute 大厅气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:15:31; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:15:37; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:16:05; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:16:06; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:16:12; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:16:20; ERROR; Execute command Fail in 2022-08-02 15:16:20.583092. Error is required argument is not an integer
+2022-08-02  15:16:21; ERROR; Execute command Fail in 2022-08-02 15:16:21.605029. Error is required argument is not an integer
+2022-08-02  15:16:22; ERROR; Execute command Fail in 2022-08-02 15:16:22.625073. Error is required argument is not an integer
+2022-08-02  15:16:24; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:16:24; ERROR; Execute command Fail in 2022-08-02 15:16:24.708476. Error is required argument is not an integer
+2022-08-02  15:16:25; ERROR; Execute command Fail in 2022-08-02 15:16:25.732240. Error is required argument is not an integer
+2022-08-02  15:16:26; ERROR; Execute command Fail in 2022-08-02 15:16:26.756607. Error is required argument is not an integer
+2022-08-02  15:16:27; ERROR; Execute command Fail in 2022-08-02 15:16:27.782520. Error is required argument is not an integer
+2022-08-02  15:16:30; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:16:36; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:16:44; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:17:17; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:17:19; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:17:19; DEBUG; Execute command successfully in 2022-08-02 15:17:19.116626
+2022-08-02  15:17:20; DEBUG; Execute command successfully in 2022-08-02 15:17:20.172436
+2022-08-02  15:17:21; DEBUG; Execute command successfully in 2022-08-02 15:17:21.244385
+2022-08-02  15:17:22; DEBUG; Execute command successfully in 2022-08-02 15:17:22.300055
+2022-08-02  15:17:23; DEBUG; Execute command successfully in 2022-08-02 15:17:23.355716
+2022-08-02  15:17:24; DEBUG; Execute command successfully in 2022-08-02 15:17:24.668311
+2022-08-02  15:17:25; DEBUG; Execute command successfully in 2022-08-02 15:17:25.722972
+2022-08-02  15:17:31; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:17:37; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:18:48; DEBUG; app start
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/主卧气体传感器.json successfully
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/热泵.json successfully
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/大厅气体传感器.json successfully
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/只读.json successfully
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/次卧气体传感器.json successfully
+2022-08-02  15:18:48; DEBUG; load /home/pi/Desktop/SteppeArkSever/./modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-08-02  15:18:48; DEBUG; InputParam init
+2022-08-02  15:18:55; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:19:13; ERROR; Execute command Fail in 2022-08-02 15:19:13.621867. Error is Modbus Error: Exception code = 3
+2022-08-02  15:19:19; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:19:29; ERROR; Execute command Fail in 2022-08-02 15:19:29.254897. Error is Modbus Error: Exception code = 3
+2022-08-02  15:19:33; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:19:45; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:20:09; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:20:25; DEBUG; Execute command successfully in 2022-08-02 15:20:25.091437
+2022-08-02  15:20:32; DEBUG; Execute command successfully in 2022-08-02 15:20:32.753488
+2022-08-02  15:20:42; ERROR; Error raised when execute 次卧气体传感器.json. Error is Response length is invalid 0
+2022-08-02  15:20:43; ERROR; Error raised when execute 风盘温控器.json. Error is Response length is invalid 0
+2022-08-02  15:20:49; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:21:14; DEBUG; app start
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/主卧气体传感器.json successfully
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/热泵.json successfully
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/大厅气体传感器.json successfully
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/只读.json successfully
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/次卧气体传感器.json successfully
+2022-08-02  15:21:14; DEBUG; load /home/pi/Desktop/SteppeArkSever/modbusRTU_MasterDefine/风盘温控器.json successfully
+2022-08-02  15:21:14; DEBUG; InputParam init
+2022-08-02  15:21:33; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0
+2022-08-02  15:21:39; ERROR; Error raised when execute 只读.json. Error is Response length is invalid 0

@@ -136,11 +136,11 @@ def show():
                 with col1:
                     szfpwd = st.button("设置风盘温度")
                 with col2:
-                    szfpwd_input = st.number_input("设置风盘温度", value=24, step=1)
+                    szfpwd_input = st.number_input("设置风盘温度", value=24.0, step=0.1)
                 if szfpwd:
                     for id in range(2, 9):
                         SendModbusCommand(1, 9600, 8, "N", 1,
-                                          id, 6, 3, szfpwd_input, "set all fan coils temperature target by button")
+                                          id, 6, 3, int(szfpwd_input*10), "set all fan coils temperature target by button")
             with st.container():
                 col1, col2, col3 = st.columns([1, 4, 4])
                 with col1:
