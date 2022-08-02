@@ -17,8 +17,7 @@
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
-      <charset value="GBK" />
-      <charset value="GBK" />
+      <charset value="UTF-8" />
     </export-instructions>
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -29,6 +28,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b">
+      <console name="Connection" type="STANDARD" schema="" session="Main" />
       <console name="runtime" type="STANDARD" schema="" session="Main" />
     </connection>
     <connection id="6f8d935a-b74f-4f24-beed-bd6dbe8bb0cc">
@@ -77,7 +77,7 @@
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" active="true" signed="true">
+      <connection id="9a6e28fe-7de5-40b8-a9cf-388077eb1b0b" active="true">
         <database>
           <name value="runtime" />
           <description value="" />
@@ -134,7 +134,7 @@
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter>
+          <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />
@@ -164,7 +164,7 @@
           <object-name-filters />
         </object-filters>
       </connection>
-      <connection id="6f8d935a-b74f-4f24-beed-bd6dbe8bb0cc" active="true" signed="true">
+      <connection id="6f8d935a-b74f-4f24-beed-bd6dbe8bb0cc" active="true">
         <database>
           <name value="Connection 1" />
           <description value="" />
@@ -221,7 +221,7 @@
           <alternative-statement-delimiter value="" />
         </details>
         <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
-          <object-type-filter>
+          <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
             <object-type name="ROLE" enabled="true" />
@@ -338,11 +338,11 @@
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <audit-columns>
-        <column-names value="" />
+      <tracking-columns>
+        <columnNames value="" />
         <visible value="true" />
         <editable value="false" />
-      </audit-columns>
+      </tracking-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>

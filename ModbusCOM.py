@@ -115,10 +115,7 @@ def ExecuteSeverCommand(db: sqlite3.Connection,cursor: sqlite3.Cursor, command: 
     elif d["type"] == "Modbus":
         c = SDC.ModbusCommand.FromJson(command)
         try:
-            if c.port == 0:
-                port = cf.get("Port Define", "port01")
-            else:
-                port = cf.get("Port Define", "port02")
+            port = cf.get("Port Define", f"port{c.port}")
             ModbusRTU_Singleton.InitPort(
                 port,c.baudrate,c.bytesize,c.parity,c.stopbits
             )
@@ -336,14 +333,10 @@ if __name__ == "__main__":
 
         # region ——————网站指令行为——————
         socks = dict(poller.poll(loopInterval))
-
-        while True:
-            if socks:
-                if socks.get(comSocket) == zmq.POLLIN:
-                    recv = comSocket.recv(zmq.NOBLOCK).decode("utf-8")
-                    ExecuteSeverCommand(runtime_db,runtime_cursor,recv)
-            else:
-                break
+        if socks:
+            if socks.get(comSocket) == zmq.POLLIN:
+                recv = comSocket.recv(zmq.NOBLOCK).decode("utf-8")
+                ExecuteSeverCommand(runtime_db,runtime_cursor,recv)
 
         # endregion
 
