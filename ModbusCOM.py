@@ -293,10 +293,7 @@ if __name__ == "__main__":
                 stopBits = D["Stop"]
                 functionCode = D["FuncCode"]
                 try:
-                    if port == 0:
-                        port = cf.get("Port Define", "port01")
-                    else:
-                        port = cf.get("Port Define", "port02")
+                    port = cf.get("Port Define", f"port{port}")
                     ModbusRTU_Singleton.InitPort(
                         port, baud, byteSize, parity, stopBits
                     )
@@ -338,18 +335,25 @@ if __name__ == "__main__":
         # endregion
 
         # region ——————网站指令行为——————
-        socks = dict(poller.poll(loopInterval*500))
+        socks = dict(poller.poll(loopInterval))
 
-        if socks:
-            if socks.get(comSocket) == zmq.POLLIN:
-                recv = comSocket.recv(zmq.NOBLOCK).decode("utf-8")
-                ExecuteSeverCommand(runtime_db,runtime_cursor,recv)
+        while True:
+            if socks:
+                if socks.get(comSocket) == zmq.POLLIN:
+                    recv = comSocket.recv(zmq.NOBLOCK).decode("utf-8")
+                    ExecuteSeverCommand(runtime_db,runtime_cursor,recv)
+            else:
+                break
 
         # endregion
 
-        # region ——————主站业务逻辑——————
-
+        # region ——————主站业务逻辑(迁移项目时可以删除)——————
+        # todo bypass温控器的温度控制，风机常开，设置低温，只控开关
+        # if SDC.QueryRuntimeGlobalParams("温控器bypass")[0][2] == 1:
+            # 设置modbus端口
+            # ModbusRTU_Singleton.InitPort(port_name=cf.get("Port Define", f"port{port}"),baud=9660,byteSize=8,parity="N",stopBits=1)
+            # 气体感受器低温开启风盘
         # endregion
 
-        time.sleep(loopInterval/2)
+        time.sleep(loopInterval)
         NextLoop()

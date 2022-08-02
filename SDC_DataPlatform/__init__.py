@@ -17,7 +17,7 @@ color = [
 
 Pages = ("Realtime Data", "Data Charts", "Control panel")
 
-AdminKey = "982c7116-cef4-4d1c-b51e-8eda2c275741"
+AdminKey = "sdc2021thu"
 
 
 @st.experimental_singleton
@@ -38,12 +38,25 @@ def ComPoller():
     return poller
 
 
-def QueryRuntimeGlobalParams():
+def QueryRuntimeGlobalParams(name: str=""):
     db_path = os.path.abspath(os.path.join(os.getcwd(), "Runtime.db"))
     runtime_db = sqlite3.connect(db_path)
     runtime_cursor = runtime_db.cursor()
 
-    runtime_cursor.execute("select * from GlobalParam")
+    if not name:
+        runtime_cursor.execute("select * from GlobalParam")
+    else:
+        splitname = name.split()
+        if len(splitname) > 1:
+            sqlconditions = []
+            for re in splitname:
+                sqlconditions.append(f"name like '%{re}%'")
+            sqlcondition = " and ".join(sqlconditions)
+            runtime_cursor.execute(f"select * from GlobalParam where {sqlcondition}")
+
+        else:
+            runtime_cursor.execute(f"select * from GlobalParam where name like '%{name}%'")
+
 
     data = runtime_cursor.fetchall()
     runtime_db.close()

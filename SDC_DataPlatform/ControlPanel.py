@@ -97,6 +97,72 @@ def show():
                                           slaveID, functionCode, address, outputValue, describe)
                         st.info(f"""Command will be executed later, due to ModbusCOM's read_interval config""")
 
+        # 热泵 开关 温度设置
+        with st.expander("热泵快捷控制"):
+            with st.container():
+                szrbk = _input = st.button("设置热泵开")
+                szrbg = st.button("设置热泵关")
+                if szrbk:
+                    SendModbusCommand(1, 9600, 8, "N", 1,
+                                      1, 6, 0, 2, "turn on heat pump by button")
+                if szrbg:
+                    SendModbusCommand(1, 9600, 8, "N", 1,
+                                      1, 6, 0, 0, "turn off heat pump by button")
+            with st.container():
+                col1, col2, col3 = st.columns([1, 4, 4])
+                with col1:
+                    szrbwd = st.button("设置热泵温度")
+                with col2:
+                    szrbwd_input = st.number_input("设置热泵温度", value=15, step=1)
+                if szrbwd:
+                    SendModbusCommand(1, 9600, 8, "N", 1,
+                                      1, 6, 2, szrbwd_input, "set heat pump T1S by button")
+
+        # 风盘 开关 温度设置 风速设置 常开设置
+        with st.expander("风盘快捷控制"):
+            with st.container():
+                szfpqk = _input = st.button("设置风盘全开")
+                szfpqg = st.button("设置风盘全关")
+                if szfpqk:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 2, 1, "turn on all fan coils by button")
+                if szfpqg:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 2, 0, "turn off all fan coils by button")
+            with st.container():
+                col1, col2, col3 = st.columns([1, 4, 4])
+                with col1:
+                    szfpwd = st.button("设置风盘温度")
+                with col2:
+                    szfpwd_input = st.number_input("设置风盘温度", value=24, step=1)
+                if szfpwd:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 3, szfpwd_input, "set all fan coils temperature target by button")
+            with st.container():
+                col1, col2, col3 = st.columns([1, 4, 4])
+                with col1:
+                    szfpfs = st.button("设置风盘风速")
+                with col2:
+                    szfpfs_input = st.number_input("设置风盘风速", min_value=1, max_value=4, value=3, step=1)
+                if szfpfs:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 5, szfpfs_input, "set all fan coils wind speed by button")
+            with st.container():
+                szfpfjck = st.button("设置全部风盘风机常开")
+                szfpfjcg = st.button("设置全部风盘风机常闭")
+                if szfpfjck:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 6, 1, "set all fan coils always on by button")
+                if szfpfjcg:
+                    for id in range(2, 9):
+                        SendModbusCommand(1, 9600, 8, "N", 1,
+                                          id, 6, 6, 0, "set all fan coils always off by button")
+
         st.write("## Command History")
         commandH = SDC.QueryCommandHistory()
         st.dataframe(commandH, height=300)
