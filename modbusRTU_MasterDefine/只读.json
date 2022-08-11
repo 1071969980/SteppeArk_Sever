@@ -1,7 +1,8 @@
 {
     "Readonly": 1,
-    "ReadInterval":5,
-    "Port": 1,
+    "ReadInterval":10,
+    "TimeBias":0,
+    "Port": 0,
     "Baud": 9600,
     "ByteSize": 8,
     "Parity": "N",
@@ -12,6 +13,12 @@
             "热泵_开关",
             1,
             0,
+            1
+        ],
+        [
+            "热泵_模式",
+            1,
+            1,
             1
         ],
         [

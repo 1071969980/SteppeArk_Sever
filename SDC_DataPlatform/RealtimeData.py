@@ -13,21 +13,44 @@ def show():
     """
     )
 
+
+    mode = st.selectbox("mode",["Realtime Input Data","Golbal Parameter"])
+
     search = st.text_input("Search")
 
-    data = SDC.QueryRuntimeData(search)
-    cols = st.columns(4)
-    foos = []
+    if mode == "Realtime Input Data":
 
-    for i in range(len(data)):
-        with cols[i%4]:
-            foos.append(st.empty())
-    for i in range(len(data)):
-        foos[i].metric(data[i][1],data[i][2])
+        data = SDC.QueryRuntimeData(search)
+        cols = st.columns(4)
+        foos = []
+
+        for i in range(len(data)):
+            with cols[i%4]:
+                foos.append(st.empty())
+        for i in range(len(data)):
+            foos[i].metric(data[i][1],data[i][2])
 
 
-    st.write(
-    """
-    ### press "R" to refresh
-    """
-    )
+        st.write(
+        """
+        ### press "R" to refresh
+        """
+        )
+
+    elif mode == "Golbal Parameter":
+
+        data = SDC.QueryRuntimeGlobalParams(search)
+        cols = st.columns(4)
+        foos = []
+
+        for i in range(len(data)):
+            with cols[i % 4]:
+                foos.append(st.empty())
+        for i in range(len(data)):
+            foos[i].metric(data[i][1], data[i][2])
+
+        st.write(
+            """
+            ### press "R" to refresh
+            """
+        )

@@ -1,7 +1,8 @@
 {
     "Readonly": 0,
-    "ReadInterval":30,
-    "Port": 1,
+    "ReadInterval":31,
+    "TimeBias":2,
+    "Port": 0,
     "Baud": 9600,
     "ByteSize": 8,
     "Parity": "N",

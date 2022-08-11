@@ -244,7 +244,7 @@ def show():
 
                 # 只选取了一种数据
                 if len(elements) == 1:
-                    width = st.slider(f"Chart{i+1}_Width", 400, 3200, 1650,100)
+                    width = st.slider(f"Chart{i+1}_Width", 400, 3200, 900,100)
                     st.altair_chart(GetChart(df, elements, 0, width))
 
                 # 选取了两种数据，可以使用双Y轴表示法
@@ -253,12 +253,12 @@ def show():
                     if isDualaxis:
                         st.altair_chart(GetChart_DualAxis(df, elements), use_container_width=True)
                     else:
-                        width = st.slider(f"Chart{i+1}_Width", 400, 3200, 1650,100)
+                        width = st.slider(f"Chart{i+1}_Width", 400, 3200, 900,100)
                         st.altair_chart(GetChart(df, elements, 1, width))
 
                 elif len(elements) >= 3:
                     isOverlay = st.checkbox(f"Chart{i+1}_Overlay_mode")
-                    width = st.slider(f"Chart{i+1}_Width",400,3200,1650,100)
+                    width = st.slider(f"Chart{i+1}_Width",400,3200,900,100)
                     if isOverlay:
                         st.altair_chart(GetChart(df, elements, 0, width))
                     else:
