@@ -22,12 +22,12 @@ class ModbusRTU_Singleton:
                 ModbusRTU_Singleton.master.close()
                 print("Master define is changed.Wait for serial port ready")
                 time.sleep(switchPortInterval)
-        ModbusRTU_Singleton.master = modbus_rtu.RtuMaster(serial.Serial(
-            port=port_name, baudrate=baud, bytesize=byteSize, parity=parity, stopbits=stopBits))
-        ModbusRTU_Singleton.master.set_timeout(1.0)
+            ModbusRTU_Singleton.master = modbus_rtu.RtuMaster(serial.Serial(
+                port=port_name, baudrate=baud, bytesize=byteSize, parity=parity, stopbits=stopBits))
+            ModbusRTU_Singleton.master.set_timeout(1.0)
 
-        ModbusRTU_Singleton.port_name = port_name
-        ModbusRTU_Singleton.baud = baud
-        ModbusRTU_Singleton.byteSize = byteSize
-        ModbusRTU_Singleton.parity = parity
-        ModbusRTU_Singleton.stopBits = stopBits
+            ModbusRTU_Singleton.port_name = port_name
+            ModbusRTU_Singleton.baud = baud
+            ModbusRTU_Singleton.byteSize = byteSize
+            ModbusRTU_Singleton.parity = parity
+            ModbusRTU_Singleton.stopBits = stopBits

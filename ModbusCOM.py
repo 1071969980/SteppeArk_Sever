@@ -340,78 +340,11 @@ if __name__ == "__main__":
         # endregion
 
         # region ——————主站业务逻辑(迁移项目时可以删除)——————
-        # bypass温控器的温度控制
-        try:
-            if loopTimes % 60 == 0:
-                # region 制冷模式，“温控器bypass”设置为1
-                if SDC.QueryRuntimeGlobalParams("温控器bypass")[0][2] == 1:
-                    # 设置modbus端口
-                    ModbusRTU_Singleton.InitPort(port_name=cf.get("Port Define", f"port0"), baud=9600, byteSize=8,
-                                                 parity="N", stopBits=1)
-                    # region 气体感受器高温开启风盘
-                    # 大厅控制
-                    if SDC.QueryRuntimeData("气体 大厅 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2] + \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        for id in range(2, 6):
-                            ModbusRTU_Singleton.master.execute(id, 6, 2, 1, 1)
-                        # 主卧控制
-                    if SDC.QueryRuntimeData("气体 主卧 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2] + \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        ModbusRTU_Singleton.master.execute(7, 6, 2, 1, 1)
-                        # 次卧控制
-                    if SDC.QueryRuntimeData("气体 次卧 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2] + \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        ModbusRTU_Singleton.master.execute(8, 6, 2, 1, 1)
-                    # endregion
-                    # region 气体感受器低温关闭风盘
-                    # 大厅控制
-                    if SDC.QueryRuntimeData("气体 大厅 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        for id in range(2, 6):
-                            ModbusRTU_Singleton.master.execute(id, 6, 2, 1, 0)
-                        # 主卧控制
-                    if SDC.QueryRuntimeData("气体 主卧 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        ModbusRTU_Singleton.master.execute(7, 6, 2, 1, 0)
-                        # 次卧控制
-                    if SDC.QueryRuntimeData("气体 次卧 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        ModbusRTU_Singleton.master.execute(8, 6, 2, 1, 0)
-                    # endregion
-                # endregion
-                # region 制热模式，“温控器bypass”设置为2
-                if SDC.QueryRuntimeGlobalParams("温控器bypass")[0][2] == 2:
-                    # 设置modbus端口
-                    ModbusRTU_Singleton.InitPort(port_name=cf.get("Port Define", f"port0"), baud=9600, byteSize=8,
-                                                 parity="N", stopBits=1)
-                    # region 气体感受器低温开启风盘
-                    # 大厅控制
-                    if SDC.QueryRuntimeData("气体 大厅 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2] - \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        for id in range(2, 6):
-                            ModbusRTU_Singleton.master.execute(id, 6, 2, 1, 1)
-                        # 主卧控制
-                    if SDC.QueryRuntimeData("气体 主卧 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2] - \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        ModbusRTU_Singleton.master.execute(7, 6, 2, 1, 1)
-                        # 次卧控制
-                    if SDC.QueryRuntimeData("气体 次卧 温度")[0][2] < SDC.QueryRuntimeGlobalParams("目标温度")[0][2] - \
-                            SDC.QueryRuntimeGlobalParams("温度回差")[0][2]:
-                        ModbusRTU_Singleton.master.execute(8, 6, 2, 1, 1)
-                    # endregion
-                    # region 气体感受器高温关闭风盘
-                    # 大厅控制
-                    if SDC.QueryRuntimeData("气体 大厅 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        for id in range(2, 6):
-                            ModbusRTU_Singleton.master.execute(id, 6, 2, 1, 0)
-                        # 主卧控制
-                    if SDC.QueryRuntimeData("气体 主卧 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        ModbusRTU_Singleton.master.execute(7, 6, 2, 1, 0)
-                        # 次卧控制
-                    if SDC.QueryRuntimeData("气体 次卧 温度")[0][2] > SDC.QueryRuntimeGlobalParams("目标温度")[0][2]:
-                        ModbusRTU_Singleton.master.execute(8, 6, 2, 1, 0)
-                    # endregion
-                # endregion
-        except Exception as e:
-            ErrorLog(f"Error raised when execute bypass 温控器. Error is {e.__str__()}")
-
+        # todo bypass温控器的温度控制，风机常开，设置低温，只控开关
+        # if SDC.QueryRuntimeGlobalParams("温控器bypass")[0][2] == 1:
+            # 设置modbus端口
+            # ModbusRTU_Singleton.InitPort(port_name=cf.get("Port Define", f"port{port}"),baud=9660,byteSize=8,parity="N",stopBits=1)
+            # 气体感受器低温开启风盘
         # endregion
 
         time.sleep(loopInterval)

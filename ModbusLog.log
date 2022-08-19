@@ -13810,3 +13810,52 @@
 2022-08-11  08:48:24; ERROR; Error raised when execute æ¬¡å§æ°”ä½“ä¼ æ„Ÿå™¨.json. Error is Response length is invalid 0
 2022-08-11  08:48:35; ERROR; Error raised when execute åªè¯».json. Error is Response length is invalid 0
 2022-08-11  08:48:58; ERROR; Error raised when execute åªè¯».json. Error is Response length is invalid 0
+2022-08-19  19:56:36; DEBUG; app start
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´óÌüÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´ÎÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-08-19  19:56:36; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-08-19  19:56:36; DEBUG; Create new database at: C:/Users/GMH/Desktop/SteppeArkSever\database\2022-08-19.db
+2022-08-19  19:56:36; DEBUG; InputParam init
+2022-08-19  19:56:42; ERROR; Error raised when execute Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json. Error is Response length is invalid 0
+2022-08-19  19:56:42; ERROR; Error raised when execute Ö»¶Á.json. Error is could not open port 'COM7': PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5)
+2022-08-19  19:56:42; ERROR; Error raised when execute Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json. Error is could not open port 'COM7': PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5)
+2022-08-19  19:56:52; ERROR; Error raised when execute Ö»¶Á.json. Error is could not open port 'COM7': PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5)
+2022-08-19  19:56:52; ERROR; Error raised when execute Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json. Error is could not open port 'COM7': PermissionError(13, '¾Ü¾ø·ÃÎÊ¡£', None, 5)
+2022-08-19  19:58:25; DEBUG; app start
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´óÌüÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´ÎÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-08-19  19:58:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-08-19  19:58:25; DEBUG; InputParam init
+2022-08-19  19:58:34; ERROR; Error raised when execute Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json. Error is Response length is invalid 0
+2022-08-19  19:59:25; DEBUG; app start
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´óÌüÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´ÎÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-08-19  19:59:25; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-08-19  19:59:25; DEBUG; InputParam init
+2022-08-19  19:59:50; ERROR; Error raised when execute Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json. Error is Response length is invalid 0
+2022-08-19  20:01:50; DEBUG; app start
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´óÌüÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\´ÎÎÔÆøÌå´«¸ĞÆ÷.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\ÈÈ±Ã.json successfully
+2022-08-19  20:01:50; DEBUG; load C:/Users/GMH/Desktop/SteppeArkSever\modbusRTU_MasterDefine\·çÅÌÎÂ¿ØÆ÷.json successfully
+2022-08-19  20:01:50; DEBUG; InputParam init
+2022-08-19  20:02:00; ERROR; Error raised when execute Ö÷ÎÔÆøÌå´«¸ĞÆ÷.json. Error is Response length is invalid 0
+2022-08-19  20:02:02; ERROR; Error raised when execute Ö»¶Á.json. Error is Response length is invalid 0
+2022-08-19  20:02:04; ERROR; Error raised when execute Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json. Error is Response length is invalid 0
+2022-08-19  20:02:25; ERROR; Error raised when execute Ö»¶Á.json. Error is Response length is invalid 0
+2022-08-19  20:02:28; ERROR; Error raised when execute Ö»¶Á_ÎÂ¿ØÆ÷ÉèÖÃ.json. Error is Response length is invalid 0
